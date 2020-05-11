@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "my-dream-app",
+      "public": "dist/my-dream-app",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

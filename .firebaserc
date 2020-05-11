@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "simple-app-c173e": {
+      "hosting": {
+        "my-dream-app": [
+          "simple-app-c173e"
+        ]
+      }
+    }
+  }
+}
