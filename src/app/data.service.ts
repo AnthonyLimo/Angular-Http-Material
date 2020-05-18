@@ -57,7 +57,7 @@ export class DataService {
       params: new HttpParams({fromString: "_-page=1&_limit=20"})
     };
     return this.httpClient.get<Product[]>(this.REST_API_SERVER, {
-      params: new HttpParams({ fromString: "_page=1&_limit=20" }),
+      params: options.params,
       observe: "response"
     }).pipe(retry(3), catchError(this.handleError), tap(res => {
       console.log(res.headers.get('Link'));
